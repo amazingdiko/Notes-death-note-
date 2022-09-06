@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="TableViewCellCorrect" customModule="deathnote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAd-Ie-AaF">
+                        <rect key="frame" x="158" y="9" width="197" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reason" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6C-ge-Bgb">
+                        <rect key="frame" x="20" y="29" width="335" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name of Charecter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-Yh-Fcd">
+                        <rect key="frame" x="20" y="3" width="130" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r6C-ge-Bgb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="6Fg-rv-tZK"/>
+                    <constraint firstItem="RAd-Ie-AaF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="73O-an-fGr"/>
+                    <constraint firstItem="RAd-Ie-AaF" firstAttribute="leading" secondItem="YGE-Yh-Fcd" secondAttribute="trailing" constant="8" symbolic="YES" id="GZD-dG-5Oo"/>
+                    <constraint firstItem="r6C-ge-Bgb" firstAttribute="top" secondItem="RAd-Ie-AaF" secondAttribute="bottom" constant="8" symbolic="YES" id="TuH-B6-JED"/>
+                    <constraint firstAttribute="bottom" secondItem="r6C-ge-Bgb" secondAttribute="bottom" constant="5" id="a4E-4K-Rvx"/>
+                    <constraint firstAttribute="trailing" secondItem="RAd-Ie-AaF" secondAttribute="trailing" constant="20" symbolic="YES" id="cYb-TS-KcK"/>
+                    <constraint firstItem="r6C-ge-Bgb" firstAttribute="top" secondItem="YGE-Yh-Fcd" secondAttribute="bottom" constant="8" symbolic="YES" id="e8y-o7-4WX"/>
+                    <constraint firstItem="YGE-Yh-Fcd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="iYh-02-JaW"/>
+                    <constraint firstAttribute="trailing" secondItem="r6C-ge-Bgb" secondAttribute="trailing" constant="20" symbolic="YES" id="icL-cH-hOY"/>
+                    <constraint firstItem="YGE-Yh-Fcd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="jJL-ZX-E2c"/>
+                    <constraint firstItem="r6C-ge-Bgb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="29" id="kNu-CK-ybV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="namePerson" destination="YGE-Yh-Fcd" id="eAR-qn-UGc"/>
+                <outlet property="reasonDeath" destination="r6C-ge-Bgb" id="WeP-Tk-mt3"/>
+                <outlet property="timeDeath" destination="RAd-Ie-AaF" id="fuI-sv-8D3"/>
+            </connections>
+            <point key="canvasLocation" x="97.826086956521749" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+</document>

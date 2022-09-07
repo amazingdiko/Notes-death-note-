@@ -7,4 +7,4 @@ ___
 
 Пример из симулятора 11 айфона как работает приложение:
 
-![mygif](https://i.ibb.co/jJYR45p/Simulator-Screen-Recording-i-Phone-11-2022-09-06-at-21-01-32.gif)
+![mygif](https://i.yapx.ru/TyS8d.gif)
